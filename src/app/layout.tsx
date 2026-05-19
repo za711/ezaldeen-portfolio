@@ -9,6 +9,7 @@ import { Header } from "@/components/layout/Header";
 import { LanguageProvider } from "@/components/layout/LanguageProvider";
 import { profile } from "@/data/profile";
 import { siteKeywords } from "@/lib/constants";
+import { Analytics } from "@vercel/analytics/next";
 
 const ibmPlexArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic", "latin"],
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <PageTransition>{children}</PageTransition>
           <Footer />
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );

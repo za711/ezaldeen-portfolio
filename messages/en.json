@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "impact": "Impact",
+    "services": "Services",
+    "certificates": "Certificates",
+    "cv": "CV",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "actions": {
+    "downloadCv": "Download CV",
+    "downloadCvLong": "Download Full CV",
+    "viewCertificates": "View Certificates",
+    "contactMe": "Contact Me",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "send": "Send Message",
+    "subscribe": "Subscribe",
+    "print": "Print",
+    "backHome": "Back Home"
+  },
+  "common": {
+    "yearsExperience": "Years Experience",
+    "internationalDonors": "International Donors",
+    "responseTime": "Within 24 hours",
+    "built": "Built with precision and purpose",
+    "all": "All",
+    "readTime": "min read",
+    "featured": "Featured"
+  },
+  "home": {
+    "badge": "15+ years of field experience",
+    "headline": "Engineering humanitarian and development projects with field experience that creates real impact",
+    "intro": "Civil engineer and senior project coordinator with more than 15 years of experience managing and delivering WASH, livelihoods, infrastructure, and donor reporting portfolios.",
+    "workedWith": "Worked with: Islamic Relief | SFD | WFP | SIDA | IR-Canada",
+    "aboutTitle": "Engineering expertise that creates sustainable humanitarian impact",
+    "aboutText": "Ezaldeen Albadai combines rigorous engineering knowledge with a deep understanding of local communities, leading development and humanitarian projects from planning through final reporting with clarity and discipline.",
+    "expertiseTitle": "Expertise Areas",
+    "impactTitle": "Verified Impact Numbers",
+    "articlesTitle": "Latest Articles",
+    "ctaTitle": "Looking for an expert to manage humanitarian projects?"
+  },
+  "forms": {
+    "fullName": "Full Name",
+    "organization": "Organization",
+    "email": "Email",
+    "phone": "Phone",
+    "requestType": "Request Type",
+    "message": "Message",
+    "success": "Message sent successfully. Thank you for reaching out.",
+    "error": "The message could not be sent right now. Please try again.",
+    "newsletterSuccess": "Subscription completed successfully.",
+    "consultation": "Consultation",
+    "training": "Training",
+    "project": "Project",
+    "employment": "Employment",
+    "other": "Other"
+  },
+  "footer": {
+    "links": "Site Links",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "All rights reserved"
+  }
+}

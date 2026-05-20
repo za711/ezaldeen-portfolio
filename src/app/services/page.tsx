@@ -14,9 +14,13 @@ export default function ServicesPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Services", url: "/services/" }])) }} />
       <LocalizedPageHero
-        eyebrow="الخدمات | Services"
-        title={{ ar: "خدمات مهنية متكاملة للمشاريع الإنسانية والتنموية", en: "Integrated professional services for humanitarian and development projects" }}
-        description={{ ar: "من الدراسة والتصميم إلى التنفيذ والتوثيق، بخبرة تفهم الميدان ومتطلبات المانحين.", en: "From assessment and design to implementation and documentation, with field-aware delivery and donor-ready standards." }}
+        badgeAr="الخدمات"
+        badgeEn="Services"
+        titleAr="خدمات مهنية متكاملة للمشاريع الإنسانية والتنموية"
+        titleEn="Integrated Professional Services for Humanitarian Projects"
+        subtitleAr="من الدراسة والتصميم إلى التنفيذ والتوثيق، بخبرة تفهم الميدان ومتطلبات المانحين."
+        subtitleEn="From assessment and design to implementation and documentation, with field-aware delivery and donor-ready standards."
+        icon="🛠️"
       />
       <ServicesList />
       <LocalizedCTASection title={{ ar: "اختر خبرة تنفيذية تقلل المخاطر وترفع جودة الأثر", en: "Choose delivery experience that reduces risk and raises impact quality" }} />

@@ -32,17 +32,27 @@ export function Header() {
           <p className="truncate text-lg font-extrabold text-primary">{localize({ ar: "عزالدين البداي", en: "Ezaldeen Albadai" })}</p>
           <p className="truncate text-xs font-semibold text-muted">{profile.tagline}</p>
         </a>
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-2 overflow-x-auto whitespace-nowrap md:flex">
           {navigation.slice(0, 7).map((item) => {
             const active = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
             return (
               <a
                 key={item.id}
                 href={item.href}
-                className="nav-link text-sm font-bold text-primary/80 hover:text-accent"
+                className={`group relative rounded-lg px-3 py-1.5 text-sm font-semibold transition-all duration-300 ${
+                  active ? "text-[#0F2742]" : "text-[#374151] hover:text-[#0F2742]"
+                }`}
                 data-active={active}
               >
-                {localize(item.label)}
+                <span
+                  className={`absolute inset-0 rounded-lg border transition-all duration-300 ${
+                    active
+                      ? "border-[#D6A84F]/30 bg-[#D6A84F]/15"
+                      : "border-transparent bg-transparent group-hover:border-[#E5E7EB] group-hover:bg-[#0F2742]/[0.06]"
+                  }`}
+                />
+                {active && <span className="absolute bottom-0.5 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-[#D6A84F]" />}
+                <span className="relative z-10">{localize(item.label)}</span>
               </a>
             );
           })}

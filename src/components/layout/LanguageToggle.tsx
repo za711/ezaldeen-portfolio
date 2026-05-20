@@ -1,28 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Globe } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 
-export function LanguageToggle() {
+interface LanguageToggleProps {
+  lang?: "ar" | "en";
+  onToggle?: () => void;
+}
+
+export function LanguageToggle({ lang, onToggle }: LanguageToggleProps = {}) {
   const { locale, toggleLocale } = useLanguage();
+  const currentLang = lang ?? locale;
+  const handleToggle = onToggle ?? toggleLocale;
 
   return (
-    <button
+    <motion.button
       type="button"
-      onClick={toggleLocale}
-      className="relative h-10 w-[76px] rounded-full border border-border bg-white p-1 text-xs font-bold text-primary shadow-card"
+      onClick={handleToggle}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="group flex items-center gap-1.5 rounded-xl border border-[#E5E7EB] bg-white px-3 py-1.5 transition-all duration-300 hover:border-[#D6A84F]/50 hover:bg-[#D6A84F]/5"
       aria-label="Toggle language"
+      title="Switch language"
       data-cursor="button"
     >
-      <motion.span
-        className="absolute top-1 h-8 w-8 rounded-full bg-primary shadow-card"
-        animate={{ x: locale === "ar" ? 34 : 0 }}
-        transition={{ type: "spring", stiffness: 420, damping: 28 }}
+      <Globe
+        className="h-3.5 w-3.5 text-[#6B7280] transition-colors group-hover:text-[#D6A84F]"
+        aria-hidden="true"
       />
-      <span className="relative z-10 grid h-full grid-cols-2 items-center">
-        <span className={locale === "en" ? "text-white" : "text-primary"}>EN</span>
-        <span className={locale === "ar" ? "text-white" : "text-primary"}>AR</span>
+      <span className="font-mono text-xs font-bold tracking-wide text-[#374151] transition-colors group-hover:text-[#0F2742]">
+        {currentLang === "ar" ? "EN" : "عر"}
       </span>
-    </button>
+      <span className={`h-1.5 w-1.5 rounded-full transition-colors ${currentLang === "ar" ? "bg-[#D6A84F]" : "bg-[#2563EB]"}`} />
+    </motion.button>
   );
 }
+
+export default LanguageToggle;

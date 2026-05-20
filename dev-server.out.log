@@ -7,64 +7,31 @@
   - Environments: .env.local
 
  ✓ Starting...
- ✓ Ready in 2.8s
- ○ Compiling /contact ...
- ✓ Compiled /contact in 11.1s (1534 modules)
- GET /contact/ 200 in 11466ms
+ ✓ Ready in 2.6s
  ○ Compiling / ...
- ✓ Compiled / in 8.2s (4544 modules)
- GET / 200 in 8692ms
+ ✓ Compiled / in 6.1s (4497 modules)
+ GET / 200 in 6733ms
  ○ Compiling /impact ...
- ✓ Compiled /impact in 866ms (4547 modules)
- GET /impact/ 200 in 1133ms
- ○ Compiling /certificates ...
- ✓ Compiled /certificates in 656ms (4564 modules)
- GET /certificates/ 200 in 787ms
- GET / 200 in 166ms
- GET /impact/ 200 in 68ms
- GET /certificates/ 200 in 53ms
- ○ Compiling /services ...
- ✓ Compiled /services in 1142ms (4571 modules)
- GET /services/ 200 in 1312ms
- GET /certificates/ 200 in 66ms
- GET /contact/ 200 in 73ms
- GET / 200 in 64ms
- GET / 200 in 39ms
+ ✓ Compiled /impact in 1474ms (4490 modules)
+ GET /impact/ 200 in 1890ms
+ ✓ Compiled / in 303ms (2263 modules)
+ GET / 200 in 466ms
+ GET / 200 in 63ms
+ GET / 200 in 43ms
+ GET / 200 in 48ms
  ○ Compiling /about ...
- ✓ Compiled /about in 661ms (4578 modules)
- GET /about/ 200 in 744ms
- GET /contact/ 200 in 65ms
- GET /contact/ 200 in 99ms
- GET / 200 in 307ms
- GET /about/ 200 in 35ms
- GET / 200 in 46ms
- GET /impact/ 200 in 57ms
- GET /services/ 200 in 44ms
- GET /certificates/ 200 in 53ms
- GET /certificates/ 200 in 72ms
- GET / 200 in 41ms
- GET /certificates/ 200 in 38ms
- GET / 200 in 82ms
- GET /about/ 200 in 37ms
- GET /impact/ 200 in 74ms
- GET /services/ 200 in 33ms
- GET / 200 in 47ms
- GET /services/ 200 in 31ms
- GET /certificates/ 200 in 55ms
- ○ Compiling /cv ...
- ✓ Compiled /cv in 1619ms (4598 modules)
- GET /cv/ 200 in 2003ms
- ✓ Compiled in 529ms (2298 modules)
- GET /cv/ 200 in 34ms
- GET /cv/ 200 in 60ms
- GET / 200 in 218ms
- GET /about/ 200 in 170ms
+ ✓ Compiled /about in 1175ms (4512 modules)
+ GET /about/ 200 in 1388ms
  ○ Compiling /experience ...
- ✓ Compiled /experience in 1235ms (4597 modules)
- GET /experience/ 200 in 1459ms
- GET /impact/ 200 in 225ms
- GET /experience/ 200 in 28ms
- GET /impact/ 200 in 43ms
- GET /experience/ 200 in 26ms
- GET /impact/ 200 in 34ms
- GET /experience/ 200 in 46ms
+ ✓ Compiled /experience in 641ms (4521 modules)
+ GET /experience/ 200 in 822ms
+ GET /impact/ 200 in 239ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 822ms (4528 modules)
+ GET /services/ 200 in 1005ms
+ ○ Compiling /certificates ...
+ ✓ Compiled /certificates in 1270ms (4545 modules)
+ GET /certificates/ 200 in 1376ms
+ ○ Compiling /cv ...
+ ✓ Compiled /cv in 602ms (4560 modules)
+ GET /cv/ 200 in 758ms

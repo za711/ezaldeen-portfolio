@@ -15,9 +15,18 @@ export default function AboutPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About", url: "/about/" }])) }} />
       <LocalizedPageHero
-        eyebrow="من أنا | About"
-        title={{ ar: "مهندس مدني يقود الأثر من قلب الميدان", en: "A civil engineer leading impact from the field" }}
-        description={{ ar: "خبرة تجمع بين الانضباط الهندسي، فهم المجتمع، وإدارة المشاريع الإنسانية والتنموية بمعايير مانحين دوليين.", en: "Experience combining engineering discipline, community understanding, and humanitarian project management to international donor standards." }}
+        badgeAr="من أنا"
+        badgeEn="About"
+        titleAr="مهندس مدني يقود الأثر من قلب الميدان"
+        titleEn="Civil Engineer Leading Impact from the Field"
+        subtitleAr="خبرة تجمع بين الانضباط الهندسي، فهم المجتمع، وإدارة المشاريع الإنسانية بمعايير مانحين دوليين."
+        subtitleEn="Experience combining engineering discipline, community understanding, and humanitarian project management."
+        icon="👷"
+        stats={[
+          { value: "15+", labelAr: "سنة خبرة", labelEn: "Years Experience" },
+          { value: "7", labelAr: "مناصب قيادية", labelEn: "Leadership Roles" },
+          { value: "Yemen", labelAr: "الحديدة", labelEn: "Al Hodeida" }
+        ]}
       />
       <AboutContent />
       <LocalizedCTASection title={{ ar: "جاهز لدعم مشروعك بخبرة ميدانية قابلة للقياس", en: "Ready to support your project with measurable field experience" }} />

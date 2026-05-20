@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MapPin, MessageCircle, Phone, Timer } from "lucide-react";
+import { Linkedin, Mail, MapPin, MessageCircle, Phone, Timer } from "lucide-react";
 import { ContactForm } from "@/components/sections/shared/ContactForm";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -13,6 +13,7 @@ export function ContactContent() {
     { icon: MapPin, label: { ar: "الموقع", en: "Location" }, value: profile.location },
     { icon: Mail, label: { ar: "البريد الإلكتروني", en: "Email" }, value: { ar: profile.email, en: profile.email }, href: "mailto:" + profile.email },
     { icon: Phone, label: { ar: "الهاتف", en: "Phone" }, value: { ar: profile.phone, en: profile.phone }, href: "tel:" + profile.phone },
+    { icon: Linkedin, label: { ar: "لينكدإن", en: "LinkedIn" }, value: { ar: "ezaldeen-albadi-02880a356", en: "ezaldeen-albadi-02880a356" }, href: "https://www.linkedin.com/in/ezaldeen-albadi-02880a356" },
     { icon: Timer, label: { ar: "زمن الاستجابة", en: "Response Time" }, value: { ar: "خلال 24 ساعة", en: "Within 24 hours" } }
   ];
 

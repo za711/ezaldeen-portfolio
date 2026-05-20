@@ -1,9 +1,4 @@
-import { CVEducation } from "@/components/sections/cv/CVEducation";
-import { CVExperience } from "@/components/sections/cv/CVExperience";
-import { CVHeader } from "@/components/sections/cv/CVHeader";
-import { CVLanguages } from "@/components/sections/cv/CVLanguages";
-import { CVSkills } from "@/components/sections/cv/CVSkills";
-import { CVSummary } from "@/components/sections/cv/CVSummary";
+import CVDocument from "@/components/sections/cv/CVDocument";
 import { LocalizedPageHero } from "@/components/sections/shared/LocalizedPageHero";
 import { createMetadata, breadcrumbSchema, personSchema } from "@/lib/seo";
 
@@ -20,21 +15,16 @@ export default function CVPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", url: "/" }, { name: "CV", url: "/cv/" }])) }} />
       <div className="print-hidden">
         <LocalizedPageHero
-          eyebrow="السيرة الذاتية | CV"
-          title={{ ar: "سيرة ذاتية مصممة للقراءة والطباعة", en: "A CV designed for reading and printing" }}
-          description={{ ar: "نسخة ويب أنيقة مع تنسيق A4 نظيف عند الطباعة من المتصفح.", en: "An elegant web CV with a clean A4 layout when printed from the browser." }}
+          badgeAr="السيرة الذاتية"
+          badgeEn="Curriculum Vitae"
+          titleAr="سيرة ذاتية مصممة للقراءة والطباعة"
+          titleEn="CV Designed for Reading and Printing"
+          subtitleAr="نسخة ويب أنيقة مع تنسيق A4 نظيف عند الطباعة من المتصفح."
+          subtitleEn="An elegant web CV with a clean A4 layout when printed from the browser."
+          icon="📄"
         />
       </div>
-      <section className="section-padding bg-bg">
-        <div className="site-container space-y-6">
-          <CVHeader />
-          <CVSummary />
-          <CVSkills />
-          <CVExperience />
-          <CVEducation />
-          <CVLanguages />
-        </div>
-      </section>
+      <CVDocument />
     </>
   );
 }

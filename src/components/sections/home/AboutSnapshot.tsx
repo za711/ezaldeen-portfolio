@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { Avatar } from "@/components/ui/Avatar";
 import { Button } from "@/components/ui/Button";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { profile } from "@/data/profile";
@@ -15,11 +15,19 @@ export function AboutSnapshot() {
   return (
     <section className="section-padding bg-white">
       <div className="site-container grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="relative">
-          <Avatar className="mx-auto max-w-sm shadow-hover" />
-          <div className="absolute -bottom-6 start-8 rounded-card bg-white p-5 shadow-hover">
-            <p className="text-3xl font-extrabold text-primary">{profile.yearsOfExperience}+</p>
-            <p className="text-sm font-bold text-muted">{localize({ ar: "سنة في الميدان", en: "years in the field" })}</p>
+        <div className="relative mx-auto aspect-square w-full max-w-md">
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#0F2742] to-[#1B4F8A] opacity-20" />
+          <Image
+            src="/assets/profile/ezaldeen-profile.jpg"
+            alt="Eng. Ezaldeen Nasser Saad Albadai"
+            fill
+            className="rounded-3xl object-cover object-top ring-4 ring-[#D6A84F]/30"
+            priority
+            sizes="(max-width:768px) 100vw, 50vw"
+          />
+          <div className="absolute -bottom-4 -left-4 rounded-2xl border border-[#E5E7EB] bg-white px-4 py-3 shadow-xl">
+            <div className="text-2xl font-extrabold text-[#0F2742]">+15</div>
+            <div className="text-xs text-[#6B7280]">{localize({ ar: "سنة في الميدان", en: "Years in the field" })}</div>
           </div>
         </div>
         <div>

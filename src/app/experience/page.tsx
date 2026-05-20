@@ -13,9 +13,18 @@ export default function ExperiencePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Experience", url: "/experience/" }])) }} />
       <LocalizedPageHero
-        eyebrow="الخبرات | Experience"
-        title={{ ar: "مسار مهني من التنفيذ الميداني إلى تنسيق المحافظ الكبرى", en: "A career path from field execution to major portfolio coordination" }}
-        description={{ ar: "Timeline كامل لأدوار هندسية وإدارية في مشاريع إنسانية وتنموية بميزانيات ومؤشرات واضحة.", en: "A complete timeline of engineering and management roles in humanitarian and development projects with clear budgets and indicators." }}
+        badgeAr="المسيرة المهنية"
+        badgeEn="Experience"
+        titleAr="من التنفيذ الميداني إلى تنسيق المحافظ الكبرى"
+        titleEn="From Field Execution to Major Portfolio Coordination"
+        subtitleAr="Timeline كامل لأدوار هندسية وإدارية في مشاريع إنسانية وتنموية بميزانيات ومؤشرات واضحة."
+        subtitleEn="A complete timeline of engineering and management roles in humanitarian and development projects with clear budgets and indicators."
+        icon="📋"
+        stats={[
+          { value: "$13M+", labelAr: "إجمالي الميزانيات", labelEn: "Total Budgets" },
+          { value: "2009", labelAr: "بداية المسيرة", labelEn: "Career Start" },
+          { value: "5+", labelAr: "جهات مانحة", labelEn: "Donors" }
+        ]}
       />
       <ExperienceTimeline />
     </>

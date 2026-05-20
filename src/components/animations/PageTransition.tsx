@@ -1,16 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
 export default function PageTransition({ children }: { children: ReactNode }) {
-  if (typeof window === "undefined") {
-    return <main>{children}</main>;
-  }
-
-  return (
-    <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }}>
-      {children}
-    </motion.main>
-  );
+  return <main className="page-transition">{children}</main>;
 }

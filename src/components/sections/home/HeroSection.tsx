@@ -22,7 +22,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden pb-16 pt-16 md:pb-24 md:pt-24">
       <BackgroundPattern />
       <div className="noise-layer" />
-      <div className="site-container relative grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr]">
+      <div className="site-container relative grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         <div>
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.4, type: "spring", stiffness: 220, damping: 18 }}>
             <Badge variant="gold" className="mb-6 gap-2 text-sm">
@@ -30,18 +30,19 @@ export function HeroSection() {
               {localize({ ar: "15+ سنة خبرة ميدانية", en: "15+ years of field experience" })}
             </Badge>
           </motion.div>
-          <h1 className="max-w-4xl text-4xl font-extrabold leading-tight text-primary md:text-[56px] md:leading-[64px]">
+          <h1 className="max-w-4xl text-4xl font-extrabold leading-tight text-primary md:text-[56px] md:leading-[64px]" aria-label={headline}>
             {words.map((word, index) => (
               <motion.span
                 key={word + index}
                 custom={index}
-                className="me-2 inline-block"
+                className="inline-block"
                 initial="hidden"
                 animate="visible"
                 variants={wordReveal}
                 style={{ display: "inline-block" }}
               >
                 {word}
+                {index < words.length - 1 ? " " : ""}
               </motion.span>
             ))}
           </h1>
@@ -66,7 +67,7 @@ export function HeroSection() {
             {localize({ ar: "عمل مع: Islamic Relief | SFD | WFP | SIDA | IR-Canada", en: "Worked with: Islamic Relief | SFD | WFP | SIDA | IR-Canada" })}
           </motion.p>
         </div>
-        <div className="animate-float">
+        <div className="hidden animate-float lg:block">
           <HeroDashboard />
         </div>
       </div>

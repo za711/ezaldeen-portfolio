@@ -1,0 +1,45 @@
+ M dev-server.err.log
+ M dev-server.out.log
+ M public/apple-touch-icon.png
+ M public/downloads/Ezaldeen-Albadai-CV.pdf
+ M public/favicon-32x32.png
+ M public/favicon.ico
+ M src/app/about/page.tsx
+ M src/app/certificates/page.tsx
+ M src/app/cv/page.tsx
+ M src/app/experience/page.tsx
+ M src/app/impact/page.tsx
+ M src/app/layout.tsx
+ M src/app/services/page.tsx
+ M src/components/animations/CustomCursor.tsx
+ M src/components/layout/Footer.tsx
+ M src/components/layout/Header.tsx
+ M src/components/layout/LanguageToggle.tsx
+ M src/components/layout/MobileNav.tsx
+ M src/components/sections/about/AboutContent.tsx
+ M src/components/sections/contact/ContactContent.tsx
+ M src/components/sections/home/AboutSnapshot.tsx
+ M src/components/sections/home/HeroSection.tsx
+ M src/components/sections/shared/LocalizedPageHero.tsx
+ M src/components/sections/shared/PageHero.tsx
+ M src/data/achievements.ts
+ M src/styles/globals.css
+ M tsconfig.tsbuildinfo
+?? .codex-backups/
+?? public/assets/achievements/achievement-01.jpg
+?? public/assets/achievements/achievement-02.jpg
+?? public/assets/achievements/achievement-03.jpg
+?? public/assets/achievements/achievement-04.jpg
+?? public/assets/achievements/achievement-05.jpg
+?? public/assets/achievements/achievement-06.jpg
+?? public/assets/achievements/achievement-07.jpg
+?? public/assets/achievements/achievement-08.jpg
+?? public/assets/achievements/achievement-09.jpg
+?? public/assets/achievements/achievement-10.jpg
+?? public/assets/achievements/achievement-11.jpg
+?? public/assets/profile/
+?? public/downloads/Ezaldeen-Albadai-CV-ATS.html
+?? scripts/generate-favicon.mjs
+?? src/components/animations/WaterRipple.tsx
+?? src/components/sections/cv/CVDocument.tsx
+?? "\330\271\330\262 \330\247\331\204\330\257\331\212\331\206/"

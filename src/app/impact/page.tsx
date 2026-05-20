@@ -16,9 +16,18 @@ export default function ImpactPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Impact", url: "/impact/" }])) }} />
       <LocalizedPageHero
-        eyebrow="المشاريع والأثر | Impact"
-        title={{ ar: "أثر قابل للقياس في المياه وسبل العيش والبنية التحتية", en: "Measurable impact in water, livelihoods, and infrastructure" }}
-        description={{ ar: "مؤشرات مختصرة توضح حجم الخبرة التنفيذية والإنسانية عبر سنوات من العمل الميداني.", en: "Concise indicators showing the scale of engineering and humanitarian delivery across years of field work." }}
+        badgeAr="المشاريع والأثر"
+        badgeEn="Impact"
+        titleAr="أثر قابل للقياس في المياه وسبل العيش والبنية التحتية"
+        titleEn="Measurable Impact in Water, Livelihoods & Infrastructure"
+        subtitleAr="مؤشرات مختصرة توضح حجم الخبرة التنفيذية والإنسانية عبر سنوات من العمل الميداني."
+        subtitleEn="Concise indicators showing the scale of engineering and humanitarian delivery across years of field work."
+        icon="📊"
+        stats={[
+          { value: "49", labelAr: "مشروع مياه", labelEn: "Water Projects" },
+          { value: "750", labelAr: "مشروع صغير", labelEn: "Small Projects" },
+          { value: "120+", labelAr: "بنية تحتية", labelEn: "Infrastructure" }
+        ]}
       />
       <ImpactStats />
       <ImpactDashboard />

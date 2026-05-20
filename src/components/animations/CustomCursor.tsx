@@ -23,27 +23,27 @@ export function CustomCursor() {
     const onMove = (event: MouseEvent) => {
       mouseX = event.clientX;
       mouseY = event.clientY;
-      dot.style.transform = `translate(${mouseX - 4}px, ${mouseY - 4}px)`;
+      dot.style.transform = `translate(${mouseX - 3}px, ${mouseY - 3}px)`;
     };
 
     const animate = () => {
-      ringX += (mouseX - ringX) * 0.12;
-      ringY += (mouseY - ringY) * 0.12;
-      ring.style.transform = `translate(${ringX - 20}px, ${ringY - 20}px)`;
+      ringX += (mouseX - ringX) * 0.18;
+      ringY += (mouseY - ringY) * 0.18;
+      ring.style.transform = `translate(${ringX - 14}px, ${ringY - 14}px)`;
       frame = requestAnimationFrame(animate);
     };
 
     const onHoverIn = () => {
-      ring.style.width = "48px";
-      ring.style.height = "48px";
+      ring.style.width = "34px";
+      ring.style.height = "34px";
       ring.style.borderColor = "#D6A84F";
-      ring.style.background = "rgba(214,168,79,0.08)";
+      ring.style.background = "rgba(214,168,79,0.05)";
     };
 
     const onHoverOut = () => {
-      ring.style.width = "40px";
-      ring.style.height = "40px";
-      ring.style.borderColor = "rgba(37,99,235,0.5)";
+      ring.style.width = "28px";
+      ring.style.height = "28px";
+      ring.style.borderColor = "rgba(37,99,235,0.35)";
       ring.style.background = "transparent";
     };
 
@@ -71,13 +71,13 @@ export function CustomCursor() {
     <>
       <div
         ref={cursorDot}
-        className="fixed left-0 top-0 z-[9999] hidden h-2 w-2 rounded-full bg-[#D6A84F] pointer-events-none lg:block"
+        className="fixed left-0 top-0 z-[9999] hidden h-1.5 w-1.5 rounded-full bg-[#D6A84F] pointer-events-none lg:block"
         style={{ transition: "none" }}
       />
       <div
         ref={cursorRing}
-        className="fixed left-0 top-0 z-[9998] hidden h-10 w-10 rounded-full border border-[#2563EB]/50 pointer-events-none lg:block"
-        style={{ transition: "width 0.25s, height 0.25s, border-color 0.25s, background 0.25s" }}
+        className="fixed left-0 top-0 z-[9998] hidden h-7 w-7 rounded-full border border-[#2563EB]/35 pointer-events-none lg:block"
+        style={{ transition: "width 0.2s, height 0.2s, border-color 0.2s, background 0.2s" }}
       />
     </>
   );

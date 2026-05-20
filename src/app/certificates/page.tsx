@@ -13,9 +13,18 @@ export default function CertificatesPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Certificates", url: "/certificates/" }])) }} />
       <LocalizedPageHero
-        eyebrow="الشهادات | Certificates"
-        title={{ ar: "شهادات مختارة وآمنة للعرض العام", en: "Selected certificates safe for public display" }}
-        description={{ ar: "مجموعة من شهادات الخبرة والتدريب والتعليم دون عرض أي وثائق حساسة أو بيانات شخصية غير لازمة.", en: "A curated set of experience, training, and education certificates without exposing sensitive documents or unnecessary personal data." }}
+        badgeAr="الشهادات والاعتمادات"
+        badgeEn="Certificates"
+        titleAr="شهادات مختارة وآمنة للعرض العام"
+        titleEn="Selected & Safe Certificates for Public Display"
+        subtitleAr="مجموعة من شهادات الخبرة والتدريب والتعليم دون عرض أي وثائق حساسة أو بيانات شخصية غير لازمة."
+        subtitleEn="A curated set of experience, training, and education certificates without exposing sensitive documents or unnecessary personal data."
+        icon="🏅"
+        stats={[
+          { value: "10", labelAr: "شهادة معتمدة", labelEn: "Certificates" },
+          { value: "2003", labelAr: "البكالوريوس", labelEn: "Bachelor" },
+          { value: "2024", labelAr: "آخر اعتماد", labelEn: "Latest Cert" }
+        ]}
       />
       <CertificateFilters />
     </>

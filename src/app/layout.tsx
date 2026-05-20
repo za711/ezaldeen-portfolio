@@ -4,6 +4,7 @@ import "./globals.css";
 import { CustomCursor } from "@/components/animations/CustomCursor";
 import PageTransition from "@/components/animations/PageTransition";
 import ScrollProgress from "@/components/animations/ScrollProgress";
+import WaterRipple from "@/components/animations/WaterRipple";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { LanguageProvider } from "@/components/layout/LanguageProvider";
@@ -51,7 +52,14 @@ export const metadata: Metadata = {
     description: profile.summary.en,
     images: ["/og-image.png"]
   },
-  robots: "index, follow"
+  robots: "index, follow",
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: "/apple-touch-icon.png"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -60,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={[cairo.variable, ibmPlexArabic.variable, ibmMono.variable, "font-sans"].join(" ")}>
         <LanguageProvider>
           <ScrollProgress />
+          <WaterRipple />
           <CustomCursor />
           <Header />
           <PageTransition>{children}</PageTransition>

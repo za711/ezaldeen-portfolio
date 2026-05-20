@@ -44,7 +44,7 @@ export default function AnimatedCounter({
   }, [inView, end, duration]);
 
   return (
-    <span ref={ref} className={className}>
+    <span ref={ref} className={className} aria-label={`${prefix}${end}${suffix}`} data-final-value={`${prefix}${end}${suffix}`}>
       {prefix}
       {count}
       {suffix}

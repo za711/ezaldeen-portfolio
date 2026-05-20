@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar } from "@/components/ui/Avatar";
+import Image from "next/image";
 import { Card } from "@/components/ui/Card";
 import { experienceEntries } from "@/data/experience";
 import { profile } from "@/data/profile";
@@ -13,7 +13,21 @@ export function AboutContent() {
   return (
     <section className="section-padding bg-bg">
       <div className="site-container grid items-start gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-        <Avatar className="shadow-hover" />
+        <div className="relative mx-auto aspect-square w-full max-w-md">
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#0F2742] to-[#1B4F8A] opacity-20" />
+          <Image
+            src="/assets/profile/ezaldeen-profile.jpg"
+            alt="Eng. Ezaldeen Nasser Saad Albadai"
+            fill
+            className="rounded-3xl object-cover object-top ring-4 ring-[#D6A84F]/30"
+            priority
+            sizes="(max-width:768px) 100vw, 50vw"
+          />
+          <div className="absolute -bottom-4 -left-4 rounded-2xl border border-[#E5E7EB] bg-white px-4 py-3 shadow-xl">
+            <div className="text-2xl font-extrabold text-[#0F2742]">+15</div>
+            <div className="text-xs text-[#6B7280]">{localize({ ar: "سنة في الميدان", en: "Years in the field" })}</div>
+          </div>
+        </div>
         <div className="space-y-6">
           <Card>
             <h2 className="text-3xl font-extrabold text-primary">{localize({ ar: profile.nameAr, en: profile.nameEn })}</h2>
